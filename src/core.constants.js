@@ -3,9 +3,17 @@ const ADDON_CLASS = 'octotree';
 const SHOW_CLASS = 'octotree-show';
 const PINNED_CLASS = 'octotree-pinned';
 
+const ShowInPage = {
+  All: 'All',
+  CodeAndPullRequest: 'CodeAndPullRequest',
+  Code: 'Code', 
+  PullRequest: 'PullRequest'
+}
+
 const STORE = {
   TOKEN: 'octotree.access_token',
   HOVEROPEN: 'octotree.hover_open',
+  SHOWIN: 'octotree.showin',
   PR: 'octotree.prdiff_shown',
   HOTKEYS: 'octotree.hotkeys',
   ICONS: 'octotree.icons',
@@ -20,6 +28,7 @@ const STORE = {
 const DEFAULTS = {
   TOKEN: '',
   HOVEROPEN: true,
+  SHOWIN: ShowInPage.All,
   PR: true,
   LOADALL: true,
   HOTKEYS: '⌘+⇧+s, ⌃+⇧+s',

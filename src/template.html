@@ -56,7 +56,6 @@
               </a>
             </div>
             <input type="text" class="form-control input-block" data-store="TOKEN" />
-            <div class="octotree-disclaimer text-gray">Token is stored in local storage.</div>
           </div>
 
           <div>
@@ -80,6 +79,30 @@
             />
           </div>
 
+          <div class="octotree-settings-showin">
+            <label>Enable Octotree in:</label>
+            <div>
+              <label>
+                <input type="radio" name="SHOWIN" value="All" data-store="SHOWIN" /> <span>All pages</span>
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="SHOWIN" value="CodeAndPullRequest" data-store="SHOWIN" /> <span>Code & pull requests</span>
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="SHOWIN" value="Code" data-store="SHOWIN" /> <span>Code</span>
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="SHOWIN" value="PullRequest" data-store="SHOWIN" /> <span>Pull requests</span>
+              </label>
+            </div>
+          </div>
+
           <div>
             <label><input type="checkbox" data-store="HOVEROPEN" /> <span>Show sidebar on hover</span></label>
           </div>
@@ -92,48 +115,15 @@
           <div>
             <label>
               <input type="checkbox" data-store="PR" /> <span>Show pull request changes</span>
-              <span class="octotree-disclaimer is-margin-left text-gray">Note: maximum of 300 files</span>
+              <span class="octotree-disclaimer">Note: maximum of 300 files</span>
             </label>
           </div>
 
-          <section class="octotree-signin-features">
-            <header>
-              <a href="https://www.octotree.io/register?utm_content=signup&utm_medium=extension" target="_blank">Sign up</a> to unlock these features (FREE):
-            </header>
-            <ul>
-              <li>Ambiance color theme</li>
-              <li>Built-in file search</li>
-              <li>Bookmark repositories</li>
-              <li>No ads in footer</li>
-              <li>15-days Pro trial</li>
-            </ul>
-            <footer>
-              Already have an account? <a href="https://www.octotree.io/login?utm_content=signin&utm_medium=extension" target="_blank">Sign in</a> now
-            </footer>
-          </section>
-
           <div><button class="btn btn-primary">Apply settings</button></div>
         </form>
-
-        <div class="octotree-pro-banner">
-          <div class="is-padding">
-            Loving Octotree? You will <i class="octotree-icon-heart"></i> Octotree Pro even more. Octotree Pro is loaded with features that bring your
-            productivity on GitHub to the next level.
-            <a href="https://www.octotree.io/?utm_source=lite&utm_medium=extension" target="_blank"> Learn more</a>
-          </div>
-
-          <div class="octotree-pro-feature">
-            <img src="" alt="Octotree Pro">
-            <div class="octotree-pro-feature-desc"></div>
-          </div>
-        </div>
       </div>
     </div>
 
-    <div class="octotree-footer">
-      <div class="octotree-tip">
-        <a href="https://www.octotree.io/#pro?utm_source=lite&utm_medium=extension" target="_blank"></a>
-      </div>
-    </div>
+    <div class="octotree-footer"></div>
   </nav>
 </div>
